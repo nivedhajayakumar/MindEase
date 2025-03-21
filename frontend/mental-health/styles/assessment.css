@@ -1,0 +1,236 @@
+/* Global Styles with bigger spaced fonts */
+body {
+  font-family: "Poppins", sans-serif; /* Modern and professional font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #eaf4ff, #b3c8f2); /* Subtle gradient with blue shades */
+  color: #1f2937;
+  font-weight: 700; /* Makes the text even thicker */
+  letter-spacing: 0.8px; /* Increased spacing for readability */
+  line-height: 1.8; /* Increased line height for better spacing */
+  text-rendering: optimizeLegibility; /* Ensures smooth text rendering */
+  font-size: 1.1rem; /* Base font size increased */
+}
+
+
+/* Main Container with thicker elements */
+.min-h-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("C:/Users/niveh/Downloads/mern11/frontend/mental-health/src/assets/Screenshot (127).png") no-repeat
+    center center;
+  background-size: cover; /* Ensures the image covers the entire area */
+  padding: 2.5rem; /* Added more padding */
+}
+
+
+/* Centered Card */
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Card Header */
+.card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Card Footer */
+.card-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button Styles */
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Primary Button */
+button.primary {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+}
+
+/* Outline Button */
+button.outline {
+  background-color: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+/* Disable Button */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Progress Bar */
+.progress {
+  height: 6px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Minimal Progress Color */
+.progress.minimal::before {
+  background-color: #22c55e;
+}
+
+/* Mild Progress Color */
+.progress.mild::before {
+  background-color: #fbbf24;
+}
+
+/* Moderate Progress Color */
+.progress.moderate::before {
+  background-color: #f59e0b;
+}
+
+/* Moderate Severe Progress */
+.progress.moderate-severe::before {
+  background-color: #ef4444;
+}
+
+/* Severe Progress Color */
+.progress.severe::before {
+  background-color: #dc2626;
+}
+
+/* Question Styles */
+.question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Radio Group Styles */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Option Styles */
+.option-hover {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-hover:hover {
+  background-color: #f3f4f6;
+  border-color: #3b82f6;
+}
+
+/* Active Radio Option */
+.option-hover input:checked + label {
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+/* Webcam Capture Container */
+.webcam-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px dashed #d1d5db;
+  padding: 1rem;
+}
+
+/* Results Container */
+.result-container {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+/* Result Category Text */
+.result-category {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Instructions and Notes */
+.instructions {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+/* Print Button */
+.print-btn {
+  margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .min-h-screen {
+    padding: 1rem;
+  }
+}
